@@ -18,6 +18,7 @@ struct singleton *get_instance()
 {
     static struct singleton *instance = NULL;
 
+    /*DCL*/
     if (NULL == instance) {
         pthread_mutex_lock(&singleton_mutex);
         if (NULL == instance) {
