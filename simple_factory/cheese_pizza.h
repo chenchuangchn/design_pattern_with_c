@@ -4,8 +4,10 @@
 #include "product_pizza.h"
 
 struct cheese_pizza {
-    struct product_pizza *product;
+    struct product_pizza product;
     char *name;
 };
+
+struct cheese_pizza *create_cheese_pizza();
 
 #endif

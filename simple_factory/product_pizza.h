@@ -7,4 +7,6 @@ struct product_pizza {
     void (*box)(struct product_pizza *product);
 };
 
+extern struct product_pizza *order_pizza(char *type);
+
 #endif
